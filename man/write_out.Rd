@@ -7,7 +7,7 @@
 write_out(harmonised, path)
 }
 \arguments{
-\item{harmonised}{Output from /code{harmonise_against_ref}}
+\item{harmonised}{Output from \code{harmonise_against_ref}}
 
 \item{path}{Path to write out json file and txt file}
 }
