@@ -40,8 +40,6 @@ VignetteBuilder:
 Remotes:
     MRCIEU/genetics.binaRies,
     mrcieu/gwasvcf,
-    mrcieu/ieugwasr,
-    mrcieu/MRInstruments,
     mrcieu/TwoSampleMR,
     stephenslab/susieR,
     variani/finemapr
