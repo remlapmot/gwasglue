@@ -2,48 +2,49 @@ Package: gwasglue
 Title: GWAS summary data sources connected to analytical tools
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "Gibran",
-           family = "Hemani",
-           role = c("aut", "cre"),
-           email = "g.hemani@bristol.ac.uk",
+    person("Gibran", "Hemani", , "g.hemani@bristol.ac.uk", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-0920-1055"))
-Description: Many tools exist that use GWAS summary data for colocalisation, fine mapping, Mendelian randomization, visualisation, etc. This package is a conduit that connects R packages that can retrieve GWAS summary data to various tools for analysing those data.
+Description: Many tools exist that use GWAS summary data for
+    colocalisation, fine mapping, Mendelian randomization, visualisation,
+    etc. This package is a conduit that connects R packages that can
+    retrieve GWAS summary data to various tools for analysing those data.
+License: MIT + file LICENSE
 URL: https://github.com/mrcieu/gwasglue
 BugReports: https://github.com/mrcieu/gwasglue/issues
 Depends: 
     R (>= 3.6.0)
 Imports:
-    gwasvcf,
-    ieugwasr,
-    dplyr,
-    TwoSampleMR,
-    magrittr,
-    susieR,
-    VariantAnnotation,
-    S4Vectors,
-    SummarizedExperiment,
     data.table,
+    dplyr,
     genetics.binaRies,
     glue,
+    gwasvcf,
+    ieugwasr,
     jsonlite,
-    tidyr
+    magrittr,
+    S4Vectors,
+    SummarizedExperiment,
+    susieR,
+    tidyr,
+    TwoSampleMR,
+    VariantAnnotation
 Suggests: 
+    coloc,
+    covr,
+    finemapr,
     knitr,
     rmarkdown,
-    finemapr,
-    covr,
-    coloc,
     testthat
+VignetteBuilder: 
+    knitr
 Remotes:
+    MRCIEU/genetics.binaRies,
     mrcieu/gwasvcf,
     mrcieu/ieugwasr,
-    mrcieu/TwoSampleMR,
     mrcieu/MRInstruments,
+    mrcieu/TwoSampleMR,
     stephenslab/susieR,
-    variani/finemapr,
-    MRCIEU/genetics.binaRies
-License: MIT + file LICENSE
+    variani/finemapr
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.3.2
-VignetteBuilder: knitr
