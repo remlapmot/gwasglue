@@ -12,7 +12,7 @@ cojo_sumstat_file <- function(vcffile, outfile)
 	tib$LP <- 10^(-tib$LP)
 	tib <- tib %>% dplyr::select(rsid, ALT, REF, AF, ES, SE, LP, SS)
 	names(tib) <- c("SNP", "A1", "A2", "freq", "b", "se", "p", "N")
-	write.table(tib, file=outfile, row=F, col=T, qu=F)
+	utils::write.table(tib, file=outfile, row=F, col=T, qu=F)
 	return(vcf)
 }
 
@@ -86,12 +86,12 @@ cojo_cond <- function(vcffile, bfile, snplist, pop, gcta=genetics.binaRies::get_
 		m <- list()
 		y <- gwasvcf::query_gwas(vcf, chrompos=i)
 		extract_list <- names(y)
-		write.table(extract_list, file=file.path(workdir, "extract.txt"), row=F, col=F, qu=F)
+		utils::write.table(extract_list, file=file.path(workdir, "extract.txt"), row=F, col=F, qu=F)
 		for(j in x$variant)
 		{
 			message(j)
 			condsnps <- subset(x, variant != j)$rsid
-			write.table(condsnps, file=file.path(workdir, "cond.txt"), row=F, col=F, qu=F)
+			utils::write.table(condsnps, file=file.path(workdir, "cond.txt"), row=F, col=F, qu=F)
 			cmd <- glue::glue("{gcta} --bfile {bfile} --extract {file.path(workdir, 'extract.txt')} --cojo-file {file.path(workdir, 'sum.txt')} --cojo-cond {file.path(workdir, 'cond.txt')} --out {file.path(workdir, 'out')}")
 			system(cmd)
 			res <- data.table::fread(file.path(workdir, 'out.cma.cojo'))
