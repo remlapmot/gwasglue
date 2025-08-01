@@ -45,6 +45,7 @@ ieugwasr_to_finemapr <- function(region, id, bfile=NULL, plink_bin=NULL)
 	return(out)
 }
 
+#' @export
 print.FinemaprList <- function(x)
 {
 	utils::str(x)
