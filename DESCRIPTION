@@ -11,15 +11,11 @@ Description: Many tools exist that use GWAS summary data for colocalisation, fin
 URL: https://github.com/mrcieu/gwasglue
 BugReports: https://github.com/mrcieu/gwasglue/issues
 Depends: 
-    R (>= 3.6.0),
-    gwasvcf,
-    ieugwasr
+    R (>= 3.6.0)
 Imports:
+    gwasvcf,
+    ieugwasr,
     dplyr,
-    mr.raps,
-    MendelianRandomization,
-    MRPRESSO,
-    RadialMR,
     MRMix,
     TwoSampleMR,
     magrittr,
@@ -34,11 +30,9 @@ Suggests:
     testthat
 Remotes:
     mrcieu/gwasvcf,
-    rondolab/MR-PRESSO,
     mrcieu/ieugwasr,
     mrcieu/TwoSampleMR,
     mrcieu/MRInstruments,
-    WSpiller/RadialMR,
     gqi/MRMix,
     stephenslab/susieR,
     variani/finemapr
