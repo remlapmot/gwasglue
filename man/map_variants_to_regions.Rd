@@ -11,9 +11,6 @@ map_variants_to_regions(chrpos, pop)
 
 \item{pop}{EUR, AFR or ASN}
 }
-\value{
-
-}
 \description{
 LD regions defined here https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4731402/
 }
