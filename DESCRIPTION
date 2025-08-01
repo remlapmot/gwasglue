@@ -16,11 +16,17 @@ Imports:
     gwasvcf,
     ieugwasr,
     dplyr,
-    MRMix,
     TwoSampleMR,
     magrittr,
     susieR,
-    VariantAnnotation
+    VariantAnnotation,
+    S4Vectors,
+    SummarizedExperiment,
+    data.table,
+    genetics.binaRies,
+    glue,
+    jsonlite,
+    tidyr
 Suggests: 
     knitr,
     rmarkdown,
@@ -33,9 +39,9 @@ Remotes:
     mrcieu/ieugwasr,
     mrcieu/TwoSampleMR,
     mrcieu/MRInstruments,
-    gqi/MRMix,
     stephenslab/susieR,
-    variani/finemapr
+    variani/finemapr,
+    MRCIEU/genetics.binaRies
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
