@@ -16,7 +16,6 @@ Depends:
     ieugwasr
 Imports:
     dplyr,
-    testthat,
     mr.raps,
     MendelianRandomization,
     MRPRESSO,
@@ -24,12 +23,15 @@ Imports:
     MRMix,
     TwoSampleMR,
     magrittr,
-    susieR
+    susieR,
+    VariantAnnotation
 Suggests: 
     knitr,
     rmarkdown,
     finemapr,
-    covr
+    covr,
+    coloc,
+    testthat
 Remotes:
     mrcieu/gwasvcf,
     rondolab/MR-PRESSO,
