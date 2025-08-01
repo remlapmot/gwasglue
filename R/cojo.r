@@ -24,7 +24,6 @@ cojo_sumstat_file <- function(vcffile, outfile)
 #' @param pop EUR, AFR or ASN
 #'
 #' @export
-#' @return
 map_variants_to_regions <- function(chrpos, pop)
 {
 	regionfile <- system.file("extdata", "ldetect", paste0(pop, ".bed"), package="gwasglue")
