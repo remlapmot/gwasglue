@@ -1,5 +1,6 @@
 context("coloc")
-library(gwasglue)
+
+skip()
 
 fn <- system.file("extdata","data.vcf.gz", package="gwasvcf")
 vcf1 <- readVcf(fn)

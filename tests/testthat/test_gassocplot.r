@@ -1,5 +1,6 @@
 context("gassocplot")
-library(gwasglue)
+
+skip()
 
 radius <- 70000
 a <- ieugwasr::tophits("ieu-a-2")

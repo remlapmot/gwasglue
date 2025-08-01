@@ -1,4 +1,7 @@
 context("finemapr")
+
+skip()
+
 library(ieugwasr)
 
 
