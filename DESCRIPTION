@@ -41,7 +41,6 @@ Remotes:
     MRCIEU/genetics.binaRies,
     mrcieu/gwasvcf,
     mrcieu/TwoSampleMR,
-    stephenslab/susieR,
     variani/finemapr
 Encoding: UTF-8
 LazyData: true
